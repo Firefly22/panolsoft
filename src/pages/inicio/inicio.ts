@@ -13,9 +13,10 @@ import {Calendar } from '@ionic-native/calendar';
 })
 export class InicioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+ constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
- /* constructor(private calendar: Calendar){}
+ /*constructor(private calendar: Calendar){}
+
   calendario(){
     this.calendar.createCalendar('MyCalendar').then(
   
@@ -23,8 +24,8 @@ export class InicioPage {
   (err) => {console.log(err);
   }}
     ); }
-*/
 
+*/
  ionViewDidLoad() {
     console.log('ionViewDidLoad InicioPage');
   }
