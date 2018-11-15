@@ -13,7 +13,18 @@ import {Calendar } from '@ionic-native/calendar';
 })
 export class InicioPage {
 
- constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  Nombre: String;
+  NombreMaterial: String;
+  FechaSolicitud: String;
+  FechaDevolucion: String;
+
+ constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.Nombre='Camila Astorga';
+  this.NombreMaterial='Martillo';
+  this.FechaSolicitud='10/11/2018';
+  this.FechaDevolucion='15/11/2018';
+
+ }
 
  /*constructor(private calendar: Calendar){}
 
@@ -31,3 +42,18 @@ export class InicioPage {
   }
 
 }
+
+
+/*
+Para hacer el listado de los materaiales con fotos
+<ion-list>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img src="img/thumbnail-totoro.png">
+    </ion-thumbnail>
+    <h2>My Neighbor Totoro</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>
+</ion-list>
+*/

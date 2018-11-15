@@ -3,15 +3,38 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+   
+  <ion-title>Home  <img class='logo_i' src="../assets/imgs/logo_i.png"  /> </ion-title>
+   
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
+  <h2>Bienvenido {{Nombre}} </h2>
+
+  <button primary block ion-button color="secondary" (click)="calendario()" >Ver calendario</button>
+
+  <h3>Últimos pedidos:</h3>
+  <table width="100%"  cellpadding="0" cellspacing="0" bordercolor="#000000">
+    <tr>
+
+      <td>Nombre </td>
+      <td>Fecha Solicitud</td>
+      <td>Fecha devolución</td>
+    </tr>
+    <tr>
+      <td>{{NombreMaterial}}</td>
+      <td>{{FechaSolicitud}}</td>
+      <td>{{FechaDevolucion}}</td>
+     
+    </tr>
+  </table>
+
+
 </ion-content>
 
-<h3>Bienvenido</h3>
 
 
-<button primary block ion-button color="secondary" (click)="calendario()" >Ver calendario</button>
+
+
