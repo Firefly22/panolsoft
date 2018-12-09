@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {Calendar } from '@ionic-native/calendar';
+//import { Calendar } from '@ionic-native/calendar';
+import { GmaterialesPage } from '../gmateriales/gmateriales';
+import { CalendarioPage } from '../calendario/calendario';
+//import { CalendarioPage } from '../calendario/calendario';
 /**
  * Generated class for the InicioPage page.
  *
@@ -18,6 +21,8 @@ export class InicioPage {
   FechaSolicitud: String;
   FechaDevolucion: String;
 
+
+
  constructor(public navCtrl: NavController, public navParams: NavParams) {
   this.Nombre='Camila Astorga';
   this.NombreMaterial='Martillo';
@@ -25,18 +30,26 @@ export class InicioPage {
   this.FechaDevolucion='15/11/2018';
 
  }
+  GestionarMaterial() {
+                    
+    this.navCtrl.push(GmaterialesPage);
 
- /*constructor(private calendar: Calendar){}
+  }
+
+ 
 
   calendario(){
-    this.calendar.createCalendar('MyCalendar').then(
-  
-  (msg) => {console.log(msg);
-  (err) => {console.log(err);
-  }}
-    ); }
+    this.navCtrl.push(CalendarioPage);
+   /* this.calendar.createCalendar('MyCalendar').then(
+      (msg) => {console.log(msg);
+      (err) => {console.log(err);
+      }}
+    );*/
+    
+    
+   }
 
-*/
+
  ionViewDidLoad() {
     console.log('ionViewDidLoad InicioPage');
   }
