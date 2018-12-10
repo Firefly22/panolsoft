@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
    
-  <ion-title>Home  <img class='logo_i' src="../assets/imgs/logo_i.png"  /> </ion-title>
+  <ion-title> <ion-icon name="ios-home-outline"></ion-icon> Home  <img class='logo_i' src="../assets/imgs/logo_i.png"  /> </ion-title>
    
   </ion-navbar>
 </ion-header>
@@ -13,9 +13,11 @@
 
   <h2>Bienvenido {{Nombre}} </h2>
 
-<button primary block ion-button color="primary"(click)="calendario()">Ver calendario</button>
+<button primary block ion-button color="primary"(click)="calendario()"> 
+    <ion-icon name="ios-calendar-outline"></ion-icon> Ver calendario</button>
 
-<button primary block ion-button color="primary"(click)="GestionarMaterial()">Gestionar materiales</button>
+<button primary block ion-button color="primary"(click)="GestionarMaterial()">
+    <ion-icon name="ios-build-outline"></ion-icon> Gestionar materiales</button>
   
 
   <h3>Próximos pedidos:</h3>
@@ -33,10 +35,6 @@
      
     </tr>
   </table>
-
- 
-
-
 
 </ion-content>
 

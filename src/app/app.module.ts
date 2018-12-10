@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Calendar } from '@ionic-native/calendar/ngx';
+import { Observable } from 'rxjs-compat';
 
 //import { Calendar } from '@ionic-native/calendar';
 import { MyApp } from './app.component';
